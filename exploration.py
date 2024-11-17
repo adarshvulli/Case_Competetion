@@ -6,7 +6,7 @@ def app():
     st.title("Data Exploration")
     
     # Load data
-    data = pd.read_csv("Case_Competetion/problems_we_tackle_data.csv")
+    data = pd.read_csv("problems_we_tackle_data.csv")
     data['CANCELED'] = data['CANCELED_AT'].notnull()
     data['CLAIMED'] = data['CLAIMED_AT'].notnull()
     data['SHIFT_AGE'] = (pd.to_datetime(data['SHIFT_START_AT']) - pd.to_datetime(data['SHIFT_CREATED_AT'])).dt.total_seconds() / 3600
