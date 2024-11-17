@@ -9,7 +9,7 @@ def app():
     st.title("Modeling: Predictions and Patterns")
     
     # Load the data
-    data = pd.read_csv("/Users/jarvis/Library/CloudStorage/OneDrive-IndianaUniversity/sem3/iuinnovates challenge/problems_we_tackle_data.csv")
+    data = pd.read_csv("Case_Competetion/problems_we_tackle_data.csv")
     st.title("Work Status Prediction (IS_VERIFIED)")
 
     
