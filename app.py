@@ -1,15 +1,11 @@
 import streamlit as st
-
-st.set_page_config(page_title="Clipboard Health Analysis", layout="wide")
-st.set_theme(theme="dark")
-
-
-
-
 import home
 import exploration 
 import modeling
 import recommendations
+
+st.set_page_config(page_title="Clipboard Health Analysis", layout="wide")
+
 
 # Create dictionary of pages
 pages = {
