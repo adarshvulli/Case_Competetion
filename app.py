@@ -1,18 +1,11 @@
 import streamlit as st
 
 st.set_page_config(page_title="Clipboard Health Analysis", layout="wide")
+st.set_theme(theme="dark")
 
 
 
-# # Add all the pages
-# st.sidebar.title("Navigation")
-# st.sidebar.markdown("""
-# - [Home](#home)
-# - [Data Exploration](#exploration)
-# - [Predictive Modeling](#modeling)
-# - [Recommendations](recommendations.py)
-# """)
-# Import pages
+
 import home
 import exploration 
 import modeling
@@ -31,3 +24,4 @@ selection = st.sidebar.radio("Go to", list(pages.keys()))
 
 # Run selected page
 pages[selection]()
+
