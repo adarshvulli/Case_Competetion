@@ -11,3 +11,12 @@ def app():
     - Build predictive models to simulate the impact of pay rates.
     - Provide actionable recommendations.
     """)
+    
+    st.markdown("---")
+    
+    st.write("""
+    ## Contact details
+    - Name: Adarsh vulli
+    - linkedin: [Adarsh vulli](https://www.linkedin.com/in/adarshvulli/)
+    - Email: adarshvulli24@gmail.com
+    """)
