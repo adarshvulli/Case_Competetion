@@ -103,7 +103,7 @@ def app():
     """)
 
     # Load data
-    data = pd.read_csv("/Users/jarvis/Library/CloudStorage/OneDrive-IndianaUniversity/sem3/iuinnovates challenge/problems_we_tackle_data.csv")
+    data = data.copy()
     data['CLAIMED_AT'] = pd.to_datetime(data['CLAIMED_AT'])
     data['SHIFT_START_AT'] = pd.to_datetime(data['SHIFT_START_AT'])
     data['IS_VERIFIED'] = data['IS_VERIFIED'].astype(int)
